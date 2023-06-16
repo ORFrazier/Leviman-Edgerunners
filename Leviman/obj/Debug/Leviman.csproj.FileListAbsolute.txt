@@ -9,3 +9,15 @@ C:\Users\lonni\source\repos\Leviman\Leviman\obj\Debug\Leviman.csproj.GenerateRes
 C:\Users\lonni\source\repos\Leviman\Leviman\obj\Debug\Leviman.csproj.CoreCompileInputs.cache
 C:\Users\lonni\source\repos\Leviman\Leviman\obj\Debug\Leviman.exe
 C:\Users\lonni\source\repos\Leviman\Leviman\obj\Debug\Leviman.pdb
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\bin\Debug\Leviman.exe.config
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\bin\Debug\Leviman.exe
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\bin\Debug\Leviman.pdb
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj.AssemblyReference.cache
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj.SuggestedBindingRedirects.cache
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.Form1.resources
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.Properties.Resources.resources
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj.GenerateResource.cache
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj.CoreCompileInputs.cache
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.exe
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.pdb
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.StartMenu.resources

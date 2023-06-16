@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace Leviman
 {
+
     public partial class Form1 : Form
     {
         bool goup, godown, goleft, goright, isGameOver;
 
         int score, playerSpeed, skullOneSpeed, skullTwoSpeed, skullTwoX, skullTwoY, skullThreeX, skullThreeY, skullThreeSpeed, skullFourSpeed;
 
+       
         public Form1()
         {
+            
+
             InitializeComponent();
 
             resetGame();
