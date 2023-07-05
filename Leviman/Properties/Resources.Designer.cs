@@ -101,6 +101,15 @@ namespace Leviman.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Coin_Collect {
+            get {
+                return ResourceManager.GetStream("Coin_Collect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cursedskullsized {
@@ -117,6 +126,15 @@ namespace Leviman.Properties {
             get {
                 object obj = ResourceManager.GetObject("FabSkull", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Intro_Music {
+            get {
+                return ResourceManager.GetStream("Intro_Music", resourceCulture);
             }
         }
         

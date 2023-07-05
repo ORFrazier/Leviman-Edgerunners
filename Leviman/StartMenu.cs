@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,11 +13,22 @@ namespace Leviman
 {
     public partial class StartMenu : Form
     {
-        
+        private SoundPlayer player;
+
         public StartMenu()
         {
             InitializeComponent();
            
+            this.Load += (sender, e) =>
+                {
+                  player = new SoundPlayer(Properties.Resources.Intro_Music);
+                  player.Play();
+                    
+                };
+            this.FormClosed += (sender, e) =>
+            {
+                player.Stop();
+            };
         }
 
         private void StartMenu_Load(object sender, EventArgs e)
@@ -37,6 +49,7 @@ namespace Leviman
             secondForm.Text = "Leviman Edgerunners 0.8";
 
             Hide();
+            
             // Show the form.
             secondForm.Show();
 

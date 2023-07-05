@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtScore = new System.Windows.Forms.Label();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
@@ -90,6 +91,8 @@
             this.wallBox6 = new System.Windows.Forms.PictureBox();
             this.wallBox2 = new System.Windows.Forms.PictureBox();
             this.wallBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Wmp = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
@@ -149,6 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.wallBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wallBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wallBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wmp)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScore
@@ -700,8 +704,8 @@
             this.leviTheBarbarian.Image = global::Leviman.Properties.Resources.BarbDown;
             this.leviTheBarbarian.Location = new System.Drawing.Point(29, 69);
             this.leviTheBarbarian.Name = "leviTheBarbarian";
-            this.leviTheBarbarian.Size = new System.Drawing.Size(71, 69);
-            this.leviTheBarbarian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.leviTheBarbarian.Size = new System.Drawing.Size(55, 55);
+            this.leviTheBarbarian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.leviTheBarbarian.TabIndex = 4;
             this.leviTheBarbarian.TabStop = false;
             // 
@@ -810,12 +814,35 @@
             this.wallBox1.TabStop = false;
             this.wallBox1.Tag = "Wall";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(831, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "BackgroundMusic";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.PlayBackgroundSoundPlayer);
+            // 
+            // Wmp
+            // 
+            this.Wmp.Enabled = true;
+            this.Wmp.Location = new System.Drawing.Point(32, 216);
+            this.Wmp.Name = "Wmp";
+            this.Wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Wmp.OcxState")));
+            this.Wmp.Size = new System.Drawing.Size(255, 84);
+            this.Wmp.TabIndex = 54;
+            this.Wmp.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(918, 588);
+            this.Controls.Add(this.Wmp);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.leviTheBarbarian);
             this.Controls.Add(this.skullOne);
             this.Controls.Add(this.skullTwo);
@@ -941,6 +968,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.wallBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wallBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wallBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wmp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1009,6 +1037,8 @@
         private System.Windows.Forms.PictureBox pictureBox54;
         private System.Windows.Forms.Timer GameTimer;
         private System.Windows.Forms.PictureBox wallBox6;
+        private System.Windows.Forms.Button button1;
+        private AxWMPLib.AxWindowsMediaPlayer Wmp;
     }
 }
 

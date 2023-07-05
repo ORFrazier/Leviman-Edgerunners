@@ -110,5 +110,32 @@
   <ItemGroup>
     <None Include="Resources\BarbDown.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\YouDied.wav" />
+    <None Include="Resources\Start_Music.wav" />
+    <Content Include="Resources\15sec-2021-08-30_-_Boss_Time_-_www.FesliyanStudios.com.wav" />
+    <Content Include="Resources\ChickenGrab.wav" />
+    <Content Include="Resources\Coin Collect.wav" />
+    <Content Include="Resources\IntroMusic.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,3 +21,8 @@ C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj
 C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.exe
 C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.pdb
 C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.StartMenu.resources
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Interop.WMPLib.dll
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\obj\Debug\Leviman.csproj.ResolveComReference.cache
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\bin\Debug\Interop.WMPLib.dll
+C:\Users\lonni\source\repos\Leviman Edgerunners\Leviman\bin\Debug\AxInterop.WMPLib.dll

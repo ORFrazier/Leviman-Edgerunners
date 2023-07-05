@@ -4,25 +4,42 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Leviman
 {
-
+    
     public partial class Form1 : Form
     {
+        SoundPlayer backgroundMusic;
+        SoundPlayer chickenGrab;
+        bool bgPlaying = false;
+
         bool goup, godown, goleft, goright, isGameOver;
 
         int score, playerSpeed, skullOneSpeed, skullTwoSpeed, skullTwoX, skullTwoY, skullThreeX, skullThreeY, skullThreeSpeed, skullFourSpeed;
 
-       
+        private void PlayBackgroundSoundPlayer(object sender, EventArgs e)
+        {
+
+        }
+
+        private SoundPlayer player;
+
         public Form1()
         {
-            
-
             InitializeComponent();
+
+            //starting the media player for the level music
+            Wmp.URL = @"LevelOne.wav";
+            Wmp.settings.playCount = 9999; //the "infinite" repeating music
+            Wmp.Ctlcontrols.play();
+            Wmp.Visible = false;
+
 
             resetGame();
         }
@@ -180,7 +197,12 @@ namespace Leviman
                     {
                         if (leviTheBarbarian.Bounds.IntersectsWith(x.Bounds))
                         {
+
                             score += 1;   //makes the treasure dissappear. next step is to set the score increments
+
+                            player = new SoundPlayer(Properties.Resources.Coin_Collect);
+                            player.Play();
+
                             x.Visible = false;
                         }//wouldn't be too hard to create another type of treasure worth different amounts of points
 
@@ -191,7 +213,12 @@ namespace Leviman
                         if (leviTheBarbarian.Bounds.IntersectsWith(x.Bounds))
                         {
                             //game over losing condition
-                            gameOver("You died!");
+                            Wmp.URL = @"YouDied.wav";
+                            Wmp.settings.playCount = 1; 
+                            Wmp.Ctlcontrols.play();
+                            Wmp.Visible = false;
+                            
+                            gameOver("You died! \n Press ENTER \n to restart");
                         }
 
                         if(skullTwo.Bounds.IntersectsWith(x.Bounds))
@@ -208,7 +235,11 @@ namespace Leviman
                         if (leviTheBarbarian.Bounds.IntersectsWith(x.Bounds))
                         {
                             //another lose condition
-                            gameOver("You died!");
+                            Wmp.URL = @"YouDied.wav";
+                            Wmp.settings.playCount = 1;
+                            Wmp.Ctlcontrols.play();
+                            Wmp.Visible = false;
+                            gameOver("You died! \n Press ENTER \n to restart");
                         }  
                 }
             }
@@ -304,6 +335,10 @@ namespace Leviman
 
             }
 
+            Wmp.URL = @"LevelOne.wav";
+            Wmp.settings.playCount = 9999; //the "infinite" repeating music again
+            Wmp.Ctlcontrols.play();
+            Wmp.Visible = false;
 
             GameTimer.Start();
         }
@@ -315,7 +350,7 @@ namespace Leviman
 
             GameTimer.Stop();
 
-            txtScore.Text = "Score: " + score + Environment.NewLine + message;
+            txtScore.Text = "Score:  " + score + Environment.NewLine + message;
         }
     }
 }
